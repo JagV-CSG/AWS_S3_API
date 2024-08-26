@@ -1,0 +1,16 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [{
+            "localTimestamp": 1709675695000,
+            "localURI": "/AWS_S3_API.module/Service Descriptors/API_Utilities_1.0.0.json",
+            "disabled": false,
+            "remoteTimestamp": 0,
+            "localHash": "6c909e6d8bbe36342354d5f931c84de6d2647281",
+            "remoteId": "636",
+            "remoteHash": "6c909e6d8bbe36342354d5f931c84de6d2647281"
+        }],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": []
+}

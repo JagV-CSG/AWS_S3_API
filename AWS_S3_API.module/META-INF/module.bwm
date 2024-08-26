@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:JsonSchema="/T1709675695947Converted/JsonSchema" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_vU2QoNs5Ee6e_Kw7dmUu2Q" targetNamespace="http://tns.tibco.com/bw/composite/AWS_S3_API.module" name="AWS_S3_API.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_AW8qQNs7Ee6e_Kw7dmUu2Q" name="AWS-postS3" promote="ComponentProcess/AWS-postS3">
+    <sca:interface.wsdl xmi:id="_AXHpYNs7Ee6e_Kw7dmUu2Q" interface="http://xmlns.example.com/20240305154554PLT#wsdl.interface(AWS-postS3)" scaext:wsdlLocation="../Processes/aws_s3/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_AXZWMNs7Ee6e_Kw7dmUu2Q" name="RestService" path="/AWS/postS3" docBasePath="http://localhost:7777/AWS_S3_API.module" docResourcePath="AWS-postS3" basePath="/" connector="aws_s3.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/API_Utilities_1.0.0.json">
+      <operation xmi:id="_AXh5ENs7Ee6e_Kw7dmUu2Q" operationName="post" nickname="postAWSPostS3" httpMethod="POST" responseStyle="element" requestStyle="element" outputPartName="item">
+        <responseStatus xmi:id="_AYjz0Ns7Ee6e_Kw7dmUu2Q" statusCode="500" reasonPhrase="Internal Server Error" elementQName="JsonSchema:awsposts3fault"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_AYlB8Ns7Ee6e_Kw7dmUu2Q"/>
+      <import xmi:id="_AYka4Ns7Ee6e_Kw7dmUu2Q" importType="http://www.w3.org/2001/XMLSchema" namespace="/T1709675695947Converted/JsonSchema"/>
+      <advancedConfig xmi:id="_AXfc0Ns7Ee6e_Kw7dmUu2Q" blockingQueueSize="8192"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_AXh5Eds7Ee6e_Kw7dmUu2Q" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_wTsegNs5Ee6e_Kw7dmUu2Q" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_wT2PgNs5Ee6e_Kw7dmUu2Q" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_wT554Ns5Ee6e_Kw7dmUu2Q" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_wT9kQNs5Ee6e_Kw7dmUu2Q" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_wUAnkNs5Ee6e_Kw7dmUu2Q" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_wUDD0Ns5Ee6e_Kw7dmUu2Q" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_wUFgENs5Ee6e_Kw7dmUu2Q" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eyXp8FvnEe-KtKLymlDDyA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eyipEFvnEe-KtKLymlDDyA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_eykeQFvnEe-KtKLymlDDyA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_wApmsNs5Ee6e_Kw7dmUu2Q" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_wAq00Ns5Ee6e_Kw7dmUu2Q" processName="aws_s3.module.AWS_S3_Post_API"/>
+    <sca:service xmi:id="_AW4Y0Ns7Ee6e_Kw7dmUu2Q" name="AWS-postS3">
+      <sca:interface.wsdl xmi:id="_AW4_4Ns7Ee6e_Kw7dmUu2Q" interface="http://xmlns.example.com/20240305154554PLT#wsdl.interface(AWS-postS3)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

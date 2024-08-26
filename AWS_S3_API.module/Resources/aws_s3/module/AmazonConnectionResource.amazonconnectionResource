@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amazons3="http://ns.tibco.com/bw/sharedresource/amazons3" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_C70awds7Ee6e_Kw7dmUu2Q" name="aws_s3.module.AmazonConnectionResource" type="amazons3:Amazons3ClientConfiguration">
+  <jndi:configuration xsi:type="amazons3:Amazons3ClientConfiguration" xmi:id="_C723ANs7Ee6e_Kw7dmUu2Q" accessKey="AKIASZGMZWW63AE6UH3V" secretkey="#!Hk2hdN34GujiEjMmD2D2vCuB0R5TaVHEOp9FI4doeI054NCvtXhSE2jPfJl8r4ml8CFf1H6pyl6Tk6c7ve09GzBiwGv7TwS94+lH7lgUY6nPcvDG2msIrpRxktr3RZkY" AuthType="AWS Credentials" TokenExpirationDuration="60" region="us-west-2"/>
+</jndi:namedResource>

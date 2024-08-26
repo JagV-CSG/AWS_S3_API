@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1709675695947Converted/JsonSchema" xmlns:tns="/T1709675695947Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="AuditSafeGetEventResponse" type="tns:AuditSafeGetEventResponse"/>
+    <xs:complexType name="AuditSafeGetEventResponse">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="transactions">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="transaction_id" type="xs:string"/>
+                        <xs:element minOccurs="0" name="biz_proc" type="xs:string"/>
+                        <xs:element minOccurs="0" name="audit_event" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_desc" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_id" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_timestamp" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_status" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_source" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_destination" type="xs:string"/>
+                        <xs:element minOccurs="0" name="parent_event_id" type="xs:string"/>
+                        <xs:element minOccurs="0" name="payload" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="extra_props">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element minOccurs="0" name="prop_name" type="xs:string"/>
+                                    <xs:element minOccurs="0" name="prop_value" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AuditSafeGetEventResponse_transactions_items" type="tns:AuditSafeGetEventResponse_transactions_items"/>
+    <xs:complexType name="AuditSafeGetEventResponse_transactions_items">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="transaction_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="biz_proc" type="xs:string"/>
+            <xs:element minOccurs="0" name="audit_event" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_desc" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_timestamp" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_status" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_source" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_destination" type="xs:string"/>
+            <xs:element minOccurs="0" name="parent_event_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="payload" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="extra_props">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="prop_name" type="xs:string"/>
+                        <xs:element minOccurs="0" name="prop_value" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="awsLambdaResposne_response" type="tns:awsLambdaResposne_response"/>
+    <xs:simpleType name="awsLambdaResposne_response">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationResponse_zipCode" type="tns:addressValidationResponse_zipCode"/>
+    <xs:simpleType name="addressValidationResponse_zipCode">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationRequest" type="tns:addressValidationRequest"/>
+    <xs:complexType name="addressValidationRequest">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="addressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="addressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="city" type="xs:string"/>
+            <xs:element minOccurs="0" name="state" type="xs:string"/>
+            <xs:element minOccurs="0" name="country" type="xs:string"/>
+            <xs:element minOccurs="0" name="zipCode" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AuditSafePostEventRequest_audit_event" type="tns:AuditSafePostEventRequest_audit_event"/>
+    <xs:simpleType name="AuditSafePostEventRequest_audit_event">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="awsposts3request" type="tns:awsposts3request"/>
+    <xs:complexType name="awsposts3request">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="bucketName" type="xs:string"/>
+            <xs:element minOccurs="0" name="objectName" type="xs:string"/>
+            <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="addressValidationResponse_addressLine2" type="tns:addressValidationResponse_addressLine2"/>
+    <xs:simpleType name="addressValidationResponse_addressLine2">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="awsposts3response_response" type="tns:awsposts3response_response"/>
+    <xs:simpleType name="awsposts3response_response">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="salesforceAccountResponse_accountName" type="tns:salesforceAccountResponse_accountName"/>
+    <xs:simpleType name="salesforceAccountResponse_accountName">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventResponse_event_id" type="tns:AuditSafePostEventResponse_event_id"/>
+    <xs:simpleType name="AuditSafePostEventResponse_event_id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventResponse" type="tns:AuditSafePostEventResponse"/>
+    <xs:complexType name="AuditSafePostEventResponse">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="tas_event_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="transaction_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="salesforceAccountResponse_address" type="tns:salesforceAccountResponse_address"/>
+    <xs:simpleType name="salesforceAccountResponse_address">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventResponse_transaction_id" type="tns:AuditSafePostEventResponse_transaction_id"/>
+    <xs:simpleType name="AuditSafePostEventResponse_transaction_id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_payload" type="tns:AuditSafePostEventRequest_payload"/>
+    <xs:simpleType name="AuditSafePostEventRequest_payload">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="awsposts3request_message" type="tns:awsposts3request_message"/>
+    <xs:simpleType name="awsposts3request_message">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationResponse_state" type="tns:addressValidationResponse_state"/>
+    <xs:simpleType name="addressValidationResponse_state">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_event_desc" type="tns:AuditSafePostEventRequest_event_desc"/>
+    <xs:simpleType name="AuditSafePostEventRequest_event_desc">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationRequest_city" type="tns:addressValidationRequest_city"/>
+    <xs:simpleType name="addressValidationRequest_city">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_event_status" type="tns:AuditSafePostEventRequest_event_status"/>
+    <xs:simpleType name="AuditSafePostEventRequest_event_status">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="awsposts3request_objectName" type="tns:awsposts3request_objectName"/>
+    <xs:simpleType name="awsposts3request_objectName">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_event_timestamp" type="tns:AuditSafePostEventRequest_event_timestamp"/>
+    <xs:simpleType name="AuditSafePostEventRequest_event_timestamp">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationResponse" type="tns:addressValidationResponse"/>
+    <xs:complexType name="addressValidationResponse">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="addressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="addressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="city" type="xs:string"/>
+            <xs:element minOccurs="0" name="state" type="xs:string"/>
+            <xs:element minOccurs="0" name="country" type="xs:string"/>
+            <xs:element minOccurs="0" name="zipCode" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="salesforceAccountResponse_phoneNumber" type="tns:salesforceAccountResponse_phoneNumber"/>
+    <xs:simpleType name="salesforceAccountResponse_phoneNumber">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_parent_event_id" type="tns:AuditSafePostEventRequest_parent_event_id"/>
+    <xs:simpleType name="AuditSafePostEventRequest_parent_event_id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="GiveNewSchemaNameHere_errormessage" type="tns:GiveNewSchemaNameHere_errormessage"/>
+    <xs:simpleType name="GiveNewSchemaNameHere_errormessage">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafeGetEventResponse_transactions" type="tns:AuditSafeGetEventResponse_transactions"/>
+    <xs:complexType name="AuditSafeGetEventResponse_transactions">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="AuditSafeGetEventResponse_transactions">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="transaction_id" type="xs:string"/>
+                        <xs:element minOccurs="0" name="biz_proc" type="xs:string"/>
+                        <xs:element minOccurs="0" name="audit_event" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_desc" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_id" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_timestamp" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_status" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_source" type="xs:string"/>
+                        <xs:element minOccurs="0" name="event_destination" type="xs:string"/>
+                        <xs:element minOccurs="0" name="parent_event_id" type="xs:string"/>
+                        <xs:element minOccurs="0" name="payload" type="xs:string"/>
+                        <xs:element minOccurs="0" name="extra_props">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element minOccurs="0" name="prop_name" type="xs:string"/>
+                                    <xs:element minOccurs="0" name="prop_value" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="addressValidationFault_message" type="tns:addressValidationFault_message"/>
+    <xs:simpleType name="addressValidationFault_message">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="awsLambdaResposne" type="tns:awsLambdaResposne"/>
+    <xs:complexType name="awsLambdaResposne">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="response" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AuditSafePostEventRequest" type="tns:AuditSafePostEventRequest"/>
+    <xs:complexType name="AuditSafePostEventRequest">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="transaction_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="biz_proc" type="xs:string"/>
+            <xs:element minOccurs="0" name="audit_event" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_desc" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_timestamp" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_status" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_source" type="xs:string"/>
+            <xs:element minOccurs="0" name="event_destination" type="xs:string"/>
+            <xs:element minOccurs="0" name="parent_event_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="payload" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="extra_props">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="prop_name" type="xs:string"/>
+                        <xs:element minOccurs="0" name="prop_value" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="addressValidationRequest_addressLine1" type="tns:addressValidationRequest_addressLine1"/>
+    <xs:simpleType name="addressValidationRequest_addressLine1">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_event_id" type="tns:AuditSafePostEventRequest_event_id"/>
+    <xs:simpleType name="AuditSafePostEventRequest_event_id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_event_source" type="tns:AuditSafePostEventRequest_event_source"/>
+    <xs:simpleType name="AuditSafePostEventRequest_event_source">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationResponse_city" type="tns:addressValidationResponse_city"/>
+    <xs:simpleType name="addressValidationResponse_city">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="awsposts3fault" type="tns:awsposts3fault"/>
+    <xs:complexType name="awsposts3fault">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="awsposts3fault_message" type="tns:awsposts3fault_message"/>
+    <xs:simpleType name="awsposts3fault_message">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="awsposts3request_bucketName" type="tns:awsposts3request_bucketName"/>
+    <xs:simpleType name="awsposts3request_bucketName">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_event_destination" type="tns:AuditSafePostEventRequest_event_destination"/>
+    <xs:simpleType name="AuditSafePostEventRequest_event_destination">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="GiveNewSchemaNameHere" type="tns:GiveNewSchemaNameHere"/>
+    <xs:complexType name="GiveNewSchemaNameHere">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="errormessage" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="addressValidationRequest_zipCode" type="tns:addressValidationRequest_zipCode"/>
+    <xs:simpleType name="addressValidationRequest_zipCode">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_extra_props_items" type="tns:AuditSafePostEventRequest_extra_props_items"/>
+    <xs:complexType name="AuditSafePostEventRequest_extra_props_items">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="prop_name" type="xs:string"/>
+            <xs:element minOccurs="0" name="prop_value" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="addressValidationRequest_country" type="tns:addressValidationRequest_country"/>
+    <xs:simpleType name="addressValidationRequest_country">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="awsposts3response" type="tns:awsposts3response"/>
+    <xs:complexType name="awsposts3response">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="response" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="addressValidationFault" type="tns:addressValidationFault"/>
+    <xs:complexType name="addressValidationFault">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="salesforceAccountResponse_uId" type="tns:salesforceAccountResponse_uId"/>
+    <xs:simpleType name="salesforceAccountResponse_uId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationRequest_state" type="tns:addressValidationRequest_state"/>
+    <xs:simpleType name="addressValidationRequest_state">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="salesforceAccountResponse" type="tns:salesforceAccountResponse"/>
+    <xs:complexType name="salesforceAccountResponse">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="uId" type="xs:string"/>
+            <xs:element minOccurs="0" name="accountName" type="xs:string"/>
+            <xs:element minOccurs="0" name="phoneNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="address" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="addressValidationResponse_addressLine1" type="tns:addressValidationResponse_addressLine1"/>
+    <xs:simpleType name="addressValidationResponse_addressLine1">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationResponse_country" type="tns:addressValidationResponse_country"/>
+    <xs:simpleType name="addressValidationResponse_country">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="addressValidationRequest_addressLine2" type="tns:addressValidationRequest_addressLine2"/>
+    <xs:simpleType name="addressValidationRequest_addressLine2">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_extra_props" type="tns:AuditSafePostEventRequest_extra_props"/>
+    <xs:complexType name="AuditSafePostEventRequest_extra_props">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="AuditSafePostEventRequest_extra_props">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="prop_name" type="xs:string"/>
+                        <xs:element minOccurs="0" name="prop_value" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AuditSafePostEventRequest_transaction_id" type="tns:AuditSafePostEventRequest_transaction_id"/>
+    <xs:simpleType name="AuditSafePostEventRequest_transaction_id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventResponse_tas_event_id" type="tns:AuditSafePostEventResponse_tas_event_id"/>
+    <xs:simpleType name="AuditSafePostEventResponse_tas_event_id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="AuditSafePostEventRequest_biz_proc" type="tns:AuditSafePostEventRequest_biz_proc"/>
+    <xs:simpleType name="AuditSafePostEventRequest_biz_proc">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+</xs:schema>
