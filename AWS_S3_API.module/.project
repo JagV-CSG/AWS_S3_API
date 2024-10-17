@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>AWS_S3_API.module</name>
-	<comment></comment>
+	<comment>AWS S3 Post Project</comment>
 	<projects>
 	</projects>
 	<buildSpec>
